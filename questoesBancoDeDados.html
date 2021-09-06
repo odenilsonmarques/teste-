@@ -1,0 +1,25 @@
+<!--RESPOSTAS DA QUESTÃO 6 -->
+
+
+<!--LETRA A-->
+SELECT nome_estado from estado WHERE nome_estado = "Paraná";
+
+
+<!--LETRA B-->
+SELECT estado.nome_estado,pais.nome_pais
+FROM 
+estado,pais
+WHERE 
+estado.id_pais = pais.id_pais;
+
+<!--LETRA C-->
+ALTER table pais add sigla varchar(2)not null; 
+
+
+<!--LETRA D-->
+create table cidade
+(
+	id int (11) not null primary key auto_increment,
+	nome_cidade varchar(100) not null,
+	id_estado int(11)not null
+);

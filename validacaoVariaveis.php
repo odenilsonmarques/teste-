@@ -12,3 +12,7 @@ if(isset($variavel) && (is_array($variavel))){
 if(isset($variavel) && (is_string($variavel))){
  echo "Romarinho";
 }
+
+for($i=0;$i<2;$i++){
+
+}
